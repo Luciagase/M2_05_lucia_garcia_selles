@@ -11,6 +11,7 @@ elif c>b>a:
 else:
   print('Los numeros NO estan en orden ascendente')
 
+print('')
 #2) Realiza el ejercicio anterior pero introduciendo los numeros en una lista:
 lista=[]
 for x in range(3):
@@ -27,7 +28,7 @@ while i < len(lista):
     print ('Los numeros NO estan en orden ascendente') 
   break
 
-
+print('')
 #3) Realiza un programa que lea letras y cuente con una variable contador las letras "a" que se introducen. Para salir del programa, introducir el carácter ".". Al finalizar mostrar el número de veces que se ha pulsado la letra "a".
 letras=input('Introduce una letra:')
 while letras!='.':
@@ -37,6 +38,7 @@ while letras!='.':
 contador=lista.count('a')
 print('La letra a aparece', contador, 'veces')
 
+print('')
 #4) Crea una lista de palabras, recorre la lista y muestra cada palabra junto con su longitud. Al final, indicar cual fue la palabra con más caracteres.
 colores=['morado','azul','amarillo','gris','verde','granate','negro']
 longitudes=[len(colores[0]),len(colores[1]),len(colores[2]),len(colores[3]),len(colores[4]),len(colores[5]),len(colores[6])]
