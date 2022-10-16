@@ -1,3 +1,4 @@
+
 #1) Realiza un programa que lea tres números por teclado y permita evaluar lo siguiente:
 a=int(input('Introduce un numero: '))
 b=int(input('Introduce otro: '))
@@ -44,14 +45,15 @@ colores=['morado','azul','amarillo','gris','verde','granate','negro']
 longitudes=[len(colores[0]),len(colores[1]),len(colores[2]),len(colores[3]),len(colores[4]),len(colores[5]),len(colores[6])]
 
 
-respuesta={}
-for color in colores:
-  for longitud in longitudes:
-    respuesta[color]=longitud
-    longitudes.remove(longitud)
-    break
+def diccionario(lista1,lista2):
+  resultado=dict(zip(lista1,lista2))
+  print(resultado)
 
-print(respuesta)
+diccionario(colores,longitudes)
 
-max_value=max(colores)
-print('la palabra mas larga es',max_value)
+def palabra_larga(lista1,lista2):
+  posicion=max(lista2)
+  i=lista2.index(posicion)
+  print('la palabra mas larga es',lista1[i])
+
+palabra_larga(colores,longitudes)
